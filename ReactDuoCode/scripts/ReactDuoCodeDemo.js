@@ -152,11 +152,21 @@ ReactDuoCodeDemo.ReactBindings.Attributes.InputAttributes = $d.declare("ReactDuo
     };
     $t.ctor.prototype = $p;
 });
-ReactDuoCodeDemo.Components.TestComponentProps = $d.declare("ReactDuoCodeDemo.Components.TestComponentProps", System.Object, 0, $asm, function($t, $p) {
+ReactDuoCodeDemo.Components.TestComponent = $d.declare("ReactDuoCodeDemo.Components.TestComponent", ReactDuoCodeDemo.ReactComponentWrapper, 0, $asm, function($t, $p) {
+    $t.New = function TestComponent_New(props) { return ReactDuoCodeDemo.ReactBindings.Ele.Props(ReactDuoCodeDemo.Components.TestComponent.Props, props).As(ReactDuoCodeDemo.Components.TestComponent); };
+    $t.ctor = function TestComponent(props) {
+        $t.$baseType.ctor.call(this, props);
+    };
+    $t.ctor.prototype = $p;
+    $p.render = function TestComponent_render() {
+        return React.DOM.div(null, this.props.Props.get_Name());
+    };
+});
+ReactDuoCodeDemo.Components.TestComponent.Props = $d.declare("Props", System.Object, 0, ReactDuoCodeDemo.Components.TestComponent, function($t, $p) {
     $t.$ator = function() {
         this.Name = null;
     };
-    $t.ctor = function TestComponentProps(name) {
+    $t.ctor = function Props(name) {
         $t.$baseType.ctor.call(this);
         // Note: Can't use string.IsNullOrWhiteSpace since it's not defined in DuoCode's base library
         if ((name || "").trim() == "")
@@ -165,18 +175,8 @@ ReactDuoCodeDemo.Components.TestComponentProps = $d.declare("ReactDuoCodeDemo.Co
         this.set_Name(name);
     };
     $t.ctor.prototype = $p;
-    $p.get_Name = function TestComponentProps_get_Name() { return this.Name; };
-    $p.set_Name = function TestComponentProps_set_Name(value) { this.Name = value;return value; };
-});
-ReactDuoCodeDemo.Components.TestComponent = $d.declare("ReactDuoCodeDemo.Components.TestComponent", ReactDuoCodeDemo.ReactComponentWrapper, 0, $asm, function($t, $p) {
-    $t.New = function TestComponent_New(props) { return ReactDuoCodeDemo.ReactBindings.Ele.Props(ReactDuoCodeDemo.Components.TestComponentProps, props).As(ReactDuoCodeDemo.Components.TestComponent); };
-    $t.ctor = function TestComponent(props) {
-        $t.$baseType.ctor.call(this, props);
-    };
-    $t.ctor.prototype = $p;
-    $p.render = function TestComponent_render() {
-        return React.DOM.div(null, this.props.Props.get_Name());
-    };
+    $p.get_Name = function Props_get_Name() { return this.Name; };
+    $p.set_Name = function Props_set_Name(value) { this.Name = value;return value; };
 });
 ReactDuoCodeDemo.Stores.SimpleExampleStore = $d.declare("ReactDuoCodeDemo.Stores.SimpleExampleStore", System.Object, 0, $asm, function($t, $p) {
     $t.$ator = function() {

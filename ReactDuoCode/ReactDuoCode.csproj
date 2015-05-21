@@ -52,7 +52,6 @@
     <Compile Include="ReactBindings\Attributes\InputAttributes.cs" />
     <Compile Include="ReactBindings\Attributes\HTMLAttributes.cs" />
     <Compile Include="ReactBindings\React.cs" />
-    <Compile Include="Components\TestComponentProps.cs" />
     <Compile Include="Components\TestComponent.cs" />
     <Compile Include="Stores\SimpleExampleStore.cs" />
     <Content Include="JavaScript\ReactDuoCode.js" />
