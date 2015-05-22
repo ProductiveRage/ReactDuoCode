@@ -7,6 +7,6 @@ namespace ReactDuoCodeDemo.ReactBindings
     public static class React
     {
         [Js(Extern = true, Name = "render")]
-        public static void Render(Element element, HTMLElement container) { }
+        public extern static void Render(Element element, HTMLElement container);
     }
 }

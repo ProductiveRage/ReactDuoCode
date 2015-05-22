@@ -6,9 +6,9 @@ namespace ReactDuoCodeDemo.ReactBindings
     [Js(Extern = true, Name = "React.DOM")]
     public static class DOM
     {
-        public static Element div(HTMLAttributes properties, params Element[] children) { return null; }
-        public static Element h1(HTMLAttributes properties, params Element[] children) { return null; }
-        public static Element input(InputAttributes properties, params Element[] children) { return null; }
-        public static Element span(HTMLAttributes properties, params Element[] children) { return null; }
+        public extern static Element div(HTMLAttributes properties, params Element[] children);
+        public extern static Element h1(HTMLAttributes properties, params Element[] children);
+        public extern static Element input(InputAttributes properties, params Element[] children);
+        public extern static Element span(HTMLAttributes properties, params Element[] children);
     }
 }
