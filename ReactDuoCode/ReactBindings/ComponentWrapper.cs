@@ -15,6 +15,6 @@ namespace ReactDuoCodeDemo.ReactBindings
     public static class ComponentWrapper
     {
         [Js(OmitGenericArgs = true)]
-        public static Element GetElement<TProps>(Type componentType, TProps props) { return null; }
+        public extern static Element GetElement<TProps>(Type componentType, TProps props);
     }
 }
