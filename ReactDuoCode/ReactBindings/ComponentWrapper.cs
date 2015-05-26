@@ -8,7 +8,9 @@ namespace ReactDuoCodeDemo.ReactBindings
     {
         protected readonly ComponentProps<TProps> props;
         protected ComponentWrapper(ComponentProps<TProps> props) { }
-        public abstract Element render();
+        
+        [Js(Name = "render")]
+        public abstract Element Render();
     }
 
     [Js(Extern = true, Name = "ReactDuoCodeDemo.ReactComponentWrapper")]
