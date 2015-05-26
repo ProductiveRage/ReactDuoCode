@@ -12,7 +12,7 @@ namespace ReactDuoCodeDemo.Components
         public static Element New(Props props) { return Ele.Props(props).As<TestComponent>(); }
         private TestComponent(ComponentProps<Props> props) : base(props) { }
 
-        public override Element render()
+        public override Element Render()
         {
             return DOM.div(null, props.Props.Name);
         }

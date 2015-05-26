@@ -158,7 +158,7 @@ ReactDuoCodeDemo.Components.TestComponent = $d.declare("ReactDuoCodeDemo.Compone
         $t.$baseType.ctor.call(this, props);
     };
     $t.ctor.prototype = $p;
-    $p.render = function TestComponent_render() {
+    $p.Render = function TestComponent_Render() {
         return React.DOM.div(null, this.props.Props.get_Name());
     };
 });
