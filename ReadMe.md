@@ -16,7 +16,7 @@ The following is a very simple (but complete) React component, written in C#:
             public static Element New(Props props) { return Ele.Props(props).As<TestComponent>(); }
             private TestComponent(ComponentProps<Props> props) : base(props) { }
     
-            public override Element render()
+            public override Element Render()
             {
                 return DOM.div(null, props.Props.Name);
             }
